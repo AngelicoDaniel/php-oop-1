@@ -35,11 +35,11 @@ include_once __DIR__ . './movies/movies.php';
     var_dump($date);
     
     $movie2 = new Movie($title, $author, $date);
-    var_dump($movie);
+    var_dump($movie2);
     
 
 
-    echo $movie->getMovie();
+    echo $movie2->numeric();
     ?>
 </body>
 </html>
