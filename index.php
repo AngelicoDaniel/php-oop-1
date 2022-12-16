@@ -22,18 +22,24 @@ include_once __DIR__ . './movies/movies.php';
     </form>
 
     <?php 
+
+    $movie1 = new Movie('qwerty', 'lorem', '666');
+    var_dump($movie1);
+
+
     $title = $_GET['title'];
+    var_dump($title);
     $author = $_GET['author'];
+    var_dump($author);
     $date = $_GET['date'];
+    var_dump($date);
     
-    $movie = new Movie($title, $author, $date);
-    echo '<pre>';
-    print_r($movie);
-    echo '</pre>';
+    $movie2 = new Movie($title, $author, $date);
+    var_dump($movie);
     
 
 
-    // echo $movie->getMovie();
+    echo $movie->getMovie();
     ?>
 </body>
 </html>
